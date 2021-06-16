@@ -1,9 +1,12 @@
 // Extract Object
+const name = 'Jiant';
 const pet = {
     name: 'Hakao',
     breed: 'Shizu',
     color: 'White'
 };
 
-console.log(pet.name);
-console.log(pet.breed);
+const { name: rName, ...others } = pet;
+
+console.log(rName);
+console.log(others);
